@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'Inconsolata', monospace;
+  src: url("./google-fonts/Inconsolata-Regular.ttf");
+}
+
+html{
+  background: -webkit-linear-gradient(90deg, #5e9fe6 0%, #000232 100%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+body{
+  margin:0;
+  background-color: rgba(0,0,0,0);
+}
+
+*{
+  font-size: 16px;
+  color:white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.95);
+  font-family: 'Inconsolata', monospace;
+}
+
+p{
+  text-align: center;
+}
+
+span{
+  margin:5px;
+}
+
+h1{
+  margin:20px auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Cards */
+
+.cardTitle{
+  width: 60%;
+  margin: 10px;
+  padding-left: 15px;
+  text-align: left;
+  border-bottom: 1px solid white;
+  font-size:1.8em;
+  text-transform: uppercase;
+}
+.cityCard>h2.cardTitle{
+  width:80%;
+  margin: 10px auto;
+  padding: 5px 0;
+  text-align:center;
+}
+.fontBold{
+  font-weight: bold;
+}
+.marginTop{
+  margin-top:20px;
+}
+
+.mainContainer{
+  padding-top:60px;
+  height:100vh;
+}
+
+.bm-icon{
+  width:40px !important;
+  height:40px !important;
+  position:absolute;
+  top:5px;
+  left:15px;
+}
+
+.displayBlock{
+  display: block;
+}
+.displayNone{
+  display: none;
+}
+
+.borderTop{
+  margin:5px 20px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.cardCustom{
+  background-color: rgba(0,0,0,0.1);
+  margin:5px;
+  padding:15px;
+  -webkit-box-shadow: 0 0 3px 1px rgba(255,255,255,0.46);
+  -moz-box-shadow: 0 0 3px 1px rgba(255,255,255,0.46);
+  box-shadow: 0 0 3px 1px rgba(255,255,255,0.46);
+}
+
+.cityCard{
+  width: 40vw;
+  padding-bottom: 20px;
+}
+
+.dayCard{
+  min-width:40vw;
+  margin: 5px auto;
+  padding:15px;
+}
+
+.hourCard{
+  width:70vw;
+  padding:10px 20px;
+  margin:5px auto;
+}
+
+.cityCard:hover, 
+.dayCard:hover{
+  background-color: rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+  box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+div.dayCard>div.marginTop{
+  padding:10px;
+}
+
+.list{
+  margin: 0;
+  padding: 0;
+  background-color:#000232;
+  height:100%;
+}
+.list>ul{
+  list-style-type: none;
+  text-align: start;
+  color:white;
+  padding: 0 25px 15px 15px;
+}
+.list>ul>li{
+  padding: 15px 0 5px 0;
+  border-bottom: 1px solid white;
+  width:100%;
+  font-size: 1.2em;
+}
+.list>ul>li:hover{
+  background-color: rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.temperature{
+  text-align: right;
+  font-weight: bold;
+  font-size: 3.5em;
+  margin-bottom:0;
+}
+.dayCardMaxTemperature{
+  font-size: 2.5em;
+  color: rgba(255,0,0,0.9);
+  font-style: italic;
+  font-weight: bold;
+}
+.dayCardMinTemperature{
+  font-size:1.7em;
+  color: rgba(0,0,255,0.9);
+  font-style: italic;
+  font-weight: bold;
+}
+.hourCard> p.temperature{
+  font-size: 4em;
+  font-style: oblique;
+  margin:0;
+  text-align: center;
+}
+.date{
+  text-align: right;
+  font-size: 1.3em;
+  padding-right: 25px;
+}
+.information{
+  text-align: right;
+}
+.information>p{
+  font-size: 1.1em;
+  padding-right: 5px;
+}
+.hourCard>div.information{
+  font-size: 1.3em;
+}
+.images{
+  width:100px;
+}
+.hour{
+  font-size: 2em;
+  width:250px;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 1px solid white;
+  padding-left:15px;
+}
+
+@media (max-width: 780px) {
+  .cityCard{
+    width: 50vw;
+  }
+  .cardTitle{
+    font-size: 1.5em;
+    width:80%;
+  }
+}
+@media (max-width: 500px) {
+  .cityCard{
+    width: 90vw;
+  }
+  .cardTitle{
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width:800px) and (max-width: 1207px) {
+  .dayCard{
+    width: 70vw;
+    margin:0 auto;
+  }
+
+}
+@media (max-width: 799px) {
+  .dayCard{
+    width: 95vw;
+    margin:0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .dayCard{
+    width: 90vw;
+    margin:0 auto;
+  }
+}
+
+@media (max-width: 938px){
+  .hourCard{
+    width:80vw;
+  }
+  .hourInformation{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+  }
+  .hourInformation>p.temperature{
+    position: relative;
+    left: 200px;
+  }
+  .hourInformation>div.information>p{
+    text-align: right;
+  }
+  .hourInformation>img{
+    position: absolute;
+    width:300px;
+    top:20px;
+    left:30px;
+  }
+}
+
+@media (max-width: 700px){
+  .hour{
+    font-size: 1.2em;
+    width:60%;
+  }
+  .hourInformation>p.temperature{
+    left: 60px;
+  }
+  .hourInformation>div.information>p{
+    font-size: 1em;
+  }
+  .hourInformation>img{
+    width:100px;
+    top:0;
+    left:0;
+  }
+  .information{
+    padding-top: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+img{
+  animation: pulse 0.8s infinite alternate;
+}
+
+@keyframes pulse{
+  from{-webkit-transform: scale(1);}
+  to{-webkit-transform: scale(1.1);}
+}
